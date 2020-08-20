@@ -2,6 +2,7 @@ window.onload = function () { // Run this once the page has loaded.
     // search
     document.querySelector("#searchButton").addEventListener("click", searchGithub);
     function searchGithub() {
+        const url = "https://api.github.com/search/users?q="
         const searchUserText = document.querySelector("#searchUser").value;
 
         // Obtain a list of users from the Github API that match searchUserText
